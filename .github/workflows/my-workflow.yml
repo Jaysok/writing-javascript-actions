@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   action:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -12,3 +11,5 @@ jobs:
 
     - name: hello-action
       uses: ./.github/actions/hello-world
+      with:
+          third-greeting: "Hubot 3"
