@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build:hello": "ncc build ./.github/actions/hello-world/main.js -o ./.github/actions/hello-world/dist",
+    "build:joke": "ncc build ./.github/actions/joke-action/main.js -o ./.github/actions/joke-action/dist",
+    "build:im": "ncc build ./.github/actions/issue-maker/index.js -o ./.github/actions/issue-maker/dist"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0"
+  },
+  "dependencies": {
+    "@actions/core": "^1.8.2",
+    "@actions/github": "^5.0.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
