@@ -2,7 +2,8 @@
   "scripts": {
     "build:hello": "ncc build ./.github/actions/hello-world/main.js -o ./.github/actions/hello-world/dist",
     "build:joke": "ncc build ./.github/actions/joke-action/main.js -o ./.github/actions/joke-action/dist",
-    "build:im": "ncc build ./.github/actions/issue-maker/index.js -o ./.github/actions/issue-maker/dist"
+    "build:im": "ncc build ./.github/actions/issue-maker/index.js -o ./.github/actions/issue-maker/dist",
+    "build:actions": "npm run build:hello && npm run build:joke && npm run build:im"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.34.0"
